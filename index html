@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Accessories Order Form</title>
+</head>
+<body>
+
+<h1>Computer & Electronics Order Form</h1>
+
+<form>
+
+    <!-- Customer Personal Information -->
+    <fieldset>
+        <legend>Customer Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="password">Account Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+    </fieldset>
+
+    <!-- Contact Information -->
+    <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+    </fieldset>
+
+    <!-- Product Selection -->
+    <fieldset>
+        <legend>Product Selection</legend>
+
+        <label for="product">Select Product:</label><br>
+        <select id="product" name="product" required>
+            <option value="">--Choose Product--</option>
+            <option value="laptop">Laptop</option>
+            <option value="desktop">Desktop Computer</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="mouse">Mouse</option>
+            <option value="monitor">Monitor</option>
+            <option value="printer">Printer</option>
+            <option value="headphones">Headphones</option>
+        </select><br><br>
+
+        <label for="brand">Preferred Brand:</label><br>
+        <input type="text" id="brand" name="brand"><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+    </fieldset>
+
+    <!-- Delivery Details -->
+    <fieldset>
+        <legend>Delivery Details</legend>
+
+        <label for="address">Delivery Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40" required></textarea><br><br>
+
+        <label for="delivery_date">Preferred Delivery Date:</label><br>
+        <input type="date" id="delivery_date" name="delivery_date" required><br><br>
+    </fieldset>
+
+    <!-- Payment Preferences -->
+    <fieldset>
+        <legend>Payment Preferences</legend>
+
+        <input type="radio" id="mpesa" name="payment" value="mpesa" required>
+        <label for="mpesa">M-Pesa</label><br>
+
+        <input type="radio" id="paypal" name="payment" value="paypal">
+        <label for="paypal">PayPal</label><br>
+
+        <input type="radio" id="bank" name="payment" value="bank">
+        <label for="bank">Online Banking</label><br><br>
+    </fieldset>
+
+    <input type="submit" value="Place Order">
+
+</form>
+
+</body>
+</html>
+```
